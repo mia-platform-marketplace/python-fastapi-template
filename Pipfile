@@ -1,0 +1,20 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "mia_template_service_name_placeholder"
+
+[packages]
+fastapi = "*"
+uvicorn = "*"
+prometheus-fastapi-instrumentator = "*"
+
+[dev-packages]
+pytest = "*"
+httpx = "*"
+
+[requires]
+python_version = "3.13"
+
+[scripts]
+test = "python -m pytest tests"
+start = "python -m src.app"
